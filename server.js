@@ -1,9 +1,9 @@
 
+// set up express server
 var express = require('express');
 var app = express();
 const request = require('request');
 const bodyParser = require('body-parser');
-//const routes = require( "./routes" );
 
 // Set the View Engine
 app.set('view engine', 'ejs');
@@ -13,7 +13,7 @@ app.use(bodyParser.raw());
 
 // Set up the server
 // process.env.PORT is related to deploying on AWS
-var server = app.listen(process.env.PORT || 5000, listen);
+var server = app.listen(process.env.PORT || 3000, listen);
 module.exports = server;
 path = require('path');
 
