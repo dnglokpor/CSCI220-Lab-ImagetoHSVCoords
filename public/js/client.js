@@ -1,3 +1,9 @@
+// CSCI 220 Programming languages
+// Assignment: Brewhaha
+// Make a 3D rendering of 2D picture using the brightness as z-coordinate.
+// Add a camera for perspective control.
+// status: Working
+
 // parameter
 let WINDOW; // canvas window
 let FPS = 60; // fps
@@ -51,7 +57,6 @@ function setup(){ // before execution
     // deconstruction
     //image(img, 0, 0, imgWidth, imgHeight);
     img.loadPixels();
-    let d = pixelDensity();
     for(let x = 0; x < img.width; x++){
         for(let y = 0; y < img.height; y++){
             // (x,y) is the pixel position
@@ -79,6 +84,6 @@ function draw(){ // everytime the screen is refreshed
         pop();
     }
     // nicer perspective
-    rotateY(.5);
+    rotateY(.8);
     rotateX(.5);
 }
