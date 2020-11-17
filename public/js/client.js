@@ -66,7 +66,8 @@ function setup(){ // before execution
 }
 
 function draw(){ // everytime the screen is refreshed
-    background(0); // white background
+    background(255); // white background
+    orbitControl();
     // draw 3D representation
     for(let i = 0; i < xybcImage.length; i++){
         let item = xybcImage[i];
@@ -77,4 +78,7 @@ function draw(){ // everytime the screen is refreshed
             box(1);
         pop();
     }
+    // nicer perspective
+    rotateY(.5);
+    rotateX(.5);
 }
